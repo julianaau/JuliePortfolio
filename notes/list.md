@@ -1,0 +1,15 @@
+1. To make sure all pages are linking 
+2. The mobile menu must react when in responsive mobile view for iPhone 6 etc.,. the menu does not work after uploaded 
+3. The portfolio gallery should have an image of headphones which I put in the folder 
+4. The graphic design content has its own section, when I hover the mouse over it the overlay seems to be bigger than the picture, and there is a jitter in the animation. 
+5. Beautify it to be the best!
+
+Notes: 
+* (div syntax - missing `</div>`) Indentation is very important. It'll help spot these mistakes and other minor errors.
+* (href syntax) Leave the file name out if the href if it's linking to an anchor tag. Example: `index.html#services-section` should be `#services-section`. I've made a similar mistake when linking multiple html pages.
+* Ha, I saw you made the same mistake I once made. Don't worry, I spent the hours googling and I'll give it to you now so you don't have to suffer. `/portfolio/portfolio-project.html` should be `./portfolio/portfolio-project.html`. That stupid dot makes all the difference.
+* I added `target="_blank"` to your footer links so they'll open in separate tabs. It's important to keep your users on your portfolio. 
+* (background:url() syntax) You can use an image online or locally on your machine. If it's online the path would be like this `https://scontent-sjc3-1.xx.fbcdn.net/v/t1.0-9/60810822_2310972175839498_8020172820447232_o.jpg?_nc_cat=100&_nc_oc=AQkvMcgDjUR9M8DfRzsWNS-TegHZunHSGVTxbcMTXxktpLCd32DNsj3cDFU16O9pbWi0DHFL1sXW_nMwGSmG6aQ2&_nc_ht=scontent-sjc3-1.xx&oh=d625a6fc09f7062923eee33c2a9729cf&oe=5E203EF0`. This is a bit long but it's the image the photo in the ASAP Developers Facebook page. If your photo is locally stored (reocmmended), you'll need to create the path to that image (starting from the folder you're in), like this `../../img/beats.png`. The `../` means you're going back one folder.
+* The overlay wasn't bigger than the images (except the Skechers one, I'll get to that). The overlay was making the images bigger. There was extra padding in `.container-1 .boxx:hover .image .hover-bg{...}` so I removed it. This also resolved the jittering. Now the Skecher image. To keep it simple, the image height is too short. You'll actually need to use a photo editor for this. If you don't have Photoshop (which I don't), use pixlr.com. It's a free browser-based photo editor and it gets the job done.
+* As for the design, I didn't change much. I have an eye for it, but that's different from creating it. I took out color: blue in "Here are my art projects..." It looked like something I could click on and we want to avoid that. So I took it out, then the bold the font.
+* (script source syntax) You almost had it. `/js/index.js` should be `./js/index.js`. Your text editor can make the assumption that you're routing your script tag but GitHub is very picky and that's why your menu wasn't showing via GitHub.

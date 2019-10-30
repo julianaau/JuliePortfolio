@@ -1,0 +1,211 @@
+#intro .container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 80px 0;
+    align-items: center;
+    overflow: hidden;
+}
+
+#top .info{
+    padding: 15px;
+    position: relative;
+    margin: 0 auto;
+  }
+  #top .info .blue-square{
+    border: 20px solid #dbf1ff;
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 9%;
+    left: -11px;
+    z-index: 0;
+  }
+  #top .info h1{
+    position: relative;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: #16171b;
+    margin-bottom: 2rem;
+    z-index: 1;
+  }
+
+  #top .info a {
+    position: relative;
+    color: #16171b;
+    font-weight: 700;
+    font-size: .9rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-bottom: 2px solid black;
+    padding-bottom: 5px;
+    z-index: 1;
+}
+#top .info a:hover {
+    font-weight: 700;
+    transition: all .3s ease-in-out;
+    color: rgba(253,53,53, .7);
+    border-bottom: 2px solid rgba(253,53,53, .7);
+}
+
+  #top .info p{
+    position: relative;
+    color: #919191;
+    text-transform: capitalize;
+    margin-bottom: 4rem;
+    z-index: 1;
+  }
+
+
+
+
+#intro .img .background-img{
+    background: url('../../img/experience.jpg');
+    width: 100%;
+    max-width: 450px;
+    height: 360px;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+}
+#intro .intro-content .name h1{
+    position: relative;
+    font-size: 2rem;
+    font-weight: 500;
+    color: purple;
+    margin-bottom: 2rem;
+    z-index: 1;
+}
+
+#intro .intro-content h1{
+    position: relative;
+    font-size: 2rem;
+    font-weight: 500;
+    color: #16171b;
+    margin-bottom: 2rem;
+    z-index: 1;
+}
+
+#intro .intro-content h2{
+    position: relative;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    z-index: 1;
+}
+
+#intro .intro-content p{
+    position: relative;
+    color: #919191;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin-bottom: 4rem;
+    z-index: 1;
+}
+
+#intro .intro-content a{
+    position: relative;
+    font-size: .9rem;
+    color: #16171b;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-decoration: none;
+    border-bottom: 2px solid #000;
+    padding-bottom: 5px;
+     z-index: 1;
+     letter-spacing: 2px;
+}
+
+#intro .intro-content a:hover{
+    font-weight: 700;
+    transition: all .3s ease-in-out;
+    color: rgba(40, 21, 250, 1);
+    padding: 0 10px;
+  }
+
+  @media only screen and (max-width: 960px){
+  
+}
+@media only screen and (max-width: 767px){
+    #top {
+        padding: 0;
+    }
+    #top .container {
+        display: block;
+    }
+    #top .container .info {
+        display: block;
+        width: 100%;
+        text-align: center;
+/*         margin-bottom: 90px;
+ */    }
+    #top .img .background-img {
+      height: 500px
+    }
+    #top .info .blue-square {
+        position: static;
+        width: 140px;
+        height: 140px;
+        margin: 0 auto;
+    }
+    #top .info .title-name {
+        margin-top: -108px;
+        margin-bottom: 1.7rem;
+    }
+
+    #top .info a:hover {
+        font-weight: 700;
+        transition: all .3s ease-in-out;
+        color: rgba(253,53,53, .7);
+        border-bottom: 2px solid rgba(253,53,53, .7);
+    }
+
+    #intro .container{
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+    }
+
+    #intro .img .background-img{
+        background: url('../../img/experience.jpg');
+        position: absolute;
+        top: 450px;
+        width: 100%;
+        max-width: 450px;
+        height: 360px;
+        background-position: top center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 0 auto;
+    }
+    #intro .intro-content h2{
+        position: absolute;
+        font-size: 1.5rem;
+        font-weight: 400;
+        margin-bottom: 2rem;
+        top: 800px; }
+ 
+
+
+
+    
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
